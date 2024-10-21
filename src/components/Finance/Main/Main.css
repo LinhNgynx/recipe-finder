@@ -1,0 +1,16 @@
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav a.active-link {
+    font-weight: bold;
+    color: #007bff; 
+  }
+  
