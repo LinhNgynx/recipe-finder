@@ -1,10 +1,10 @@
 import React from "react";
 import './App.css';
-import Main from "./components/Finance/Main/Main";
+import Recipe from "./components/Recipe/Recipe";
 function App() {
   return (
     <>
-    <Main />
+    <Recipe />
     </>
   );
 }

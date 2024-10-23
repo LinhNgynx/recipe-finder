@@ -1,0 +1,146 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ecf0ef;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  background:  #cbefef;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+}
+
+.recipe-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.recipe-card,
+.recipe-card-detail {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img,
+.recipe-card-detail img {
+  width: 90%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.recipe-card p,
+.recipe-card-detail p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.recipe-card-detail ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-card-detail ul li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.recipe-card-detail a {
+  color: #3546dc;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.recipe-card-detail a:hover {
+  text-decoration: underline;
+}
+
+.recipe-card-detail button {
+  background-color: #3546dc;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 98%;
+}
+
+form button[type="submit"] {
+  background-color: #fdffdb;
+  color: rgb(58, 56, 56);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #9bc3de;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
